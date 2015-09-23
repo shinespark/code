@@ -4,20 +4,20 @@ import sys
 
 def main():
     lines = [x.strip() for x in sys.stdin.readlines()]
-    dummy = '''11
-sk
-nw
-jx
-ob
-oo
-xj
-uh
-rn
-wn
-hu
-nr
-'''
-    lines = [x.strip('\n') for x in dummy.split('\n')]
+    #  dummy = '''11
+#  sk
+#  nw
+#  jx
+#  ob
+#  oo
+#  xj
+#  uh
+#  rn
+#  wn
+#  hu
+#  nr
+#  '''
+    #  lines = [x.strip('\n') for x in dummy.split('\n')]
 
     word_num = int(lines[0])
     word_list = lines[1: 1 + word_num]

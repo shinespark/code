@@ -10,7 +10,6 @@ def main():
     for i in range(1, n + 1):
         bush[i] = 0
 
-
     # set
     num = 1
     for i in r:
@@ -42,10 +41,10 @@ def main():
 
     # output
     rabbit = {v: k for k, v in bush.items()}
-    for k in rabbit:
+    for k, v in rabbit.items():
         if k == 0:
             continue
-        print(rabbit[k])
+        print(v)
 
 
 if __name__ == "__main__":

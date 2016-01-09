@@ -1,25 +1,12 @@
 # coding: utf-8
-import io
 
 coin_list = [500, 100, 50, 10]
 
 
 def main():
-    #  rest = list(map(int, input().split()))
-    #  n = int(input())
-    #  b = [[int(i) for i in (input.split())] for i in range(n)]
-    d = '''5 7 0 9
-5
-130 1 0 0 0
-120 1 0 0 0
-180 0 2 0 2
-180 0 1 5 3
-130 1 0 0 0
-'''
-    b = io.StringIO(d)
-    rest = list(map(int, b.readline().strip().split()))
-    n = int(b.readline().strip())
-    b = [[int(i) for i in (b.readline().strip().split())] for i in range(n)]
+    rest = list(map(int, input().split()))
+    n = int(input())
+    b = [[int(i) for i in (input.split())] for i in range(n)]
 
     for b_n in b:
         rest = buy(b_n, rest)
